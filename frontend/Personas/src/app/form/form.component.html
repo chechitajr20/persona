@@ -1,0 +1,52 @@
+<div class="container">
+
+    <h1>Nueva personas</h1>
+
+    <div class="row " style="background-color: #c7ecee; border-radius: 2rem; padding: 2rem;">
+        <form class="col s12">
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="nombre" type="text" class="validate" [(ngModel)]="nombre"
+                        [ngModelOptions]="{standalone: true}">
+                    <label for="nombre">Nombre</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="apellido" type="text" class="validate" [(ngModel)]="apellido"
+                        [ngModelOptions]="{standalone: true}">
+                    <label for="apellido">Apellido</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="edad" type="text" class="validate" [(ngModel)]="edad"
+                        [ngModelOptions]="{standalone: true}">
+                    <label for="edad">Edad</label>
+                </div>
+               
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="telefono" type="text" class="validate" [(ngModel)]="telefono"
+                        [ngModelOptions]="{standalone: true}">
+                    <label for="telefono">Telefono</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="text" class="validate" [(ngModel)]="email"
+                        [ngModelOptions]="{standalone: true}">
+                    <label for="email">Email</label>
+                </div>
+                <button  (click)="Hacer()" type="button" class="btn btn-success">Success</button>
+                <button type="button" routerLink="/home" class="btn btn-secondary">Regresar</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

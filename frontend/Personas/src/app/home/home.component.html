@@ -1,0 +1,31 @@
+<div class="container">
+<h1>Listado de personas</h1>
+<a class="btn btn-primary" routerLink="/form" role="button">Agregar persona</a>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Email</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="thead-light">
+      <tr *ngFor ="let persona of personas">
+        <th scope="row">{{persona.id}}</th>
+        <th scope="row">{{persona.nombre}}</th>
+        <th scope="row">{{persona.apellido}}</th>
+        <th scope="row">{{persona.edad}}</th>
+        <th scope="row">{{persona.telefono}}</th>
+        <th scope="row">{{persona.email}}</th>
+        <th><button routerLink="/form/{{persona.id}}" type="button" class="btn btn-light">Editar</button>
+             </th>
+      </tr>
+    
+      
+    </tbody>
+  </table>
+</div>
